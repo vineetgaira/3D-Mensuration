@@ -1,6 +1,9 @@
-
+from src.display import welcome, select_shape,select_properties
 def main():
-    pass
+    welcome()
+    select_shape()
+    select_properties()
+
 
 
 

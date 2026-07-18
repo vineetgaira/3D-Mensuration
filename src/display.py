@@ -15,3 +15,4 @@ def select_shape():
 def select_properties():
    
    print(Fore.LIGHTBLUE_EX+properties_menu)
+

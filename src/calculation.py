@@ -1,22 +1,22 @@
-def area_cube(choice):
+def area_cube(choice, a):   #Side length
     pass
 
-def area_cuboid(choice):
+def area_cuboid(choice, l, w, h):    
     pass
 
-def area_cylinder(choice):
+def area_cylinder(choice, r, h):
     pass
 
-def area_cone(choice):
+def area_cone(choice, r, l):
     pass
 
-def area_sphere(choice):
+def area_sphere(choice, r):
     pass
 
-def area_hemisphere(choice):
+def area_hemisphere(choice, r):
     pass
 
-def area_pyramid(choice):
+def area_pyramid(choice, a, s):
     pass
 
 def volume_cube():

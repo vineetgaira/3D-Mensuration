@@ -1,6 +1,6 @@
+import math
 
-
-def area_cube(choice, a):   #Side length
+def area_cube(choice, a):   #Side length a
     pass
 
 def area_cuboid(choice, l, w, h):    

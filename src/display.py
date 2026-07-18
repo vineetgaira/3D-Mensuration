@@ -10,7 +10,6 @@ def select_shape():
       
   print(Fore.LIGHTBLUE_EX+selection_menu)
 
-
 def select_properties():
    
    print(Fore.LIGHTBLUE_EX+properties_menu)

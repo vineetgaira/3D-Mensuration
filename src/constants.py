@@ -1,7 +1,4 @@
 
-PI = 3.141592
-
-
 SHAPE_REGISTRY = {
     1: [{1: [1, 2]}, 2] ,
 
@@ -39,4 +36,5 @@ SHAPE_REGISTRY={
 "pyramid": [{"area": ["TSA", "CSA"]}, "volume]
 
 }
+
 """

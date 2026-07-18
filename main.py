@@ -1,5 +1,7 @@
+from src.display import select_area_type
+
 def main():
-    pass
+    select_area_type()
 
 
 

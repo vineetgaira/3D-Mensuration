@@ -142,13 +142,13 @@ PYRAMID
 """
 
 shape_dict={
-    1: cube,
-    2: cuboid,
-    3: cylinder,
-    4: cone,
-    5: sphere,
-    6: hemisphere,
-    7: pyramid
+  "cube" : cube,
+  "cuboid" : cuboid,
+  "cylinder" : cylinder,
+  "cone" : cone,
+  "sphere": sphere,
+  "hemisphere": hemisphere,
+  "pyramid": pyramid
 }
 
 welcome_menu=r"""

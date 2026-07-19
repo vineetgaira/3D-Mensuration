@@ -11,7 +11,8 @@ def select_shape():
   print(Fore.LIGHTBLUE_EX+selection_menu)
 
 def show_shape(shape):
-   SHAPE_DICT[shape]
+
+   print(Fore.LIGHTBLUE_EX+SHAPE_DICT[shape])
 
 def select_properties():
    
@@ -19,3 +20,4 @@ def select_properties():
 
 def select_area_type():
    print(Fore.LIGHTBLUE_EX+area_type)
+

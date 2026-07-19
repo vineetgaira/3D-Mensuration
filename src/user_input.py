@@ -53,3 +53,15 @@ def user_select_area():
                 print("Please enter a valid choice.")
         except ValueError:
             print("Please enter a valid integer choice.")
+
+
+def get_dimensions(prompt):
+    while True:
+        try:
+            value=float(input(prompt))
+            if value > 0:
+                return value
+            else:
+                print("Please enter a positive value.")
+        except ValueError:
+            print("Please enter a numeric value.")

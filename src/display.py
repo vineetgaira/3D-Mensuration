@@ -8,16 +8,16 @@ def welcome():
     
 def select_shape():
       
-  print(Fore.LIGHTBLUE_EX+selection_menu)
+  print(Fore.LIGHTCYAN_EX+selection_menu)
 
 def show_shape(shape):
 
-   print(Fore.LIGHTBLUE_EX+SHAPE_DICT[shape])
+   print(Fore.LIGHTRED_EX+SHAPE_DICT[shape])
 
 def select_properties():
    
-   print(Fore.LIGHTBLUE_EX+properties_menu)
+   print(Fore.LIGHTYELLOW_EX+properties_menu)
 
 def select_area_type():
-   print(Fore.LIGHTBLUE_EX+area_type)
+   print(Fore.LIGHTGREEN_EX+area_type)
 

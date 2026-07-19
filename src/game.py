@@ -11,21 +11,21 @@ from src.constants import SHAPES, AREA, PROPERTY
 def start_programme():
     welcome()
     while True:
-        input(Fore.LIGHTYELLOW_EX+"Press 'enter' to contnue:")
+        input(Fore.LIGHTYELLOW_EX+"Press 'enter' to contnue")
         clear_screen()
         select_shape()
         shape=get_user_choie(SHAPES, "Enter your choice: ")
-        input(Fore.LIGHTYELLOW_EX+"Press 'enter' to contnue:")
+        input(Fore.LIGHTYELLOW_EX+"Press 'enter' to contnue")
         clear_screen()
         show_shape(shape)
         values=collect_inputs(shape)
-        input(Fore.LIGHTYELLOW_EX+"Press 'enter' to find properties:")
+        input(Fore.LIGHTYELLOW_EX+"Press 'enter' to find properties")
         clear_screen()
         select_properties()
         prop_choice=get_user_choie(PROPERTY, "Enter your choice: ")
         
         if prop_choice=="area":
-            input(Fore.LIGHTYELLOW_EX+"Press 'enter' to find area: ")
+            input(Fore.LIGHTYELLOW_EX+"Press 'enter' to find area ")
             clear_screen()
             select_area_type()
             area_type=get_user_choie(AREA, "Enter your choice: ")

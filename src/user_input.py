@@ -36,7 +36,7 @@ def get_user_choie(options: dict, prompt: str ):
         except ValueError:
             print(Fore.RED+"Please enter a valid integer choice.")
 
-def get_dimensions(prompt):
+def get_valid_dimensions(prompt):
     while True:
         try:
             value=float(input(Fore.BLUE+prompt))
@@ -50,5 +50,5 @@ def get_dimensions(prompt):
 def collect_inputs(shape):
     values = {}
     for var_name, prompt in SHAPE_INPUTS[shape]:
-        values[var_name] = get_dimensions(prompt)
+        values[var_name] = get_valid_dimensions(prompt)
     return values

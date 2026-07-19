@@ -1,3 +1,7 @@
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
+
 from src.constants import SHAPE_INPUTS
 
 SHAPES={
@@ -20,53 +24,28 @@ AREA={
     2: "CSA"
 }
 
-def user_select_shape():
-    valid_choices={1,2,3,4,5,6,7}
+def get_user_choie(options: dict, prompt: str ):
+    valid_choices=set(options.keys())
     while True:
         try:
-            choice=int(input("Enter your choice :"))
+            choice=int(input(Fore.BLUE+prompt))
             if choice in valid_choices:
-                return SHAPES[choice]
+                return options[choice]
             else:
-                print("Please enter a valid choice.")
+                print(Fore.RED+"Please enter a valid choice.")
         except ValueError:
-            print("Please enter a valid integer choice.")
-    
-def user_select_property():
-    valid_choices={1,2}
-    while True:
-        try:
-            property_choice=int(input("Enter your choice :"))
-            if property_choice in valid_choices:
-                return PROPERTY[property_choice]
-            else:
-                print("Please enter a valid choice.")
-        except ValueError:
-            print("Please enter a valid integer choice.")
-
-def user_select_area():
-    valid_choices={1,2}
-    while True:
-        try:
-            area_choice=int(input("Enter your choice :"))
-            if area_choice in valid_choices:
-                return AREA[area_choice]
-            else:
-                print("Please enter a valid choice.")
-        except ValueError:
-            print("Please enter a valid integer choice.")
-
+            print(Fore.RED+"Please enter a valid integer choice.")
 
 def get_dimensions(prompt):
     while True:
         try:
-            value=float(input(prompt))
+            value=float(input(Fore.BLUE+prompt))
             if value > 0:
                 return value
             else:
-                print("Please enter a positive value.")
+                print(Fore.RED+"Please enter a positive value.")
         except ValueError:
-            print("Please enter a numeric value.")
+            print(Fore.RED+"Please enter a numeric value.")
 
 def collect_inputs(shape):
     values = {}

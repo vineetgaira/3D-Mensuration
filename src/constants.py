@@ -1,32 +1,10 @@
 
-SHAPE_REGISTRY={
-    "cube": {
-        "area": ["TSA"],
-        "volume": True  
-        }, 
-    "cuboid": {
-        "area": ["TSA"],
-        "volume": True  
-        }, 
-    "cylinder": {
-        "area": ["TSA", "CSA"],
-        "volume": True  
-        }, 
-    "cone": {
-        "area": ["TSA", "CSA"],
-        "volume": True  
-        }, 
-    "sphere": {
-        "area": ["TSA", "CSA"], #TSA==CSA
-        "volume": True  
-        }, 
-    "hemisphere": {
-        "area": ["TSA", "CSA"],
-        "volume": True  
-        }, 
-    "pyramid":{
-        "area":["TSA"],
-        "volume":True
-    }
-} 
-
+SHAPE_INPUTS = {
+    "cube":       [("side", "Enter side length: ")],
+    "cuboid":     [("length", "Enter length: "), ("width", "Enter width: "), ("height", "Enter height: ")],
+    "cylinder":   [("radius", "Enter radius: "), ("height", "Enter height: ")],
+    "cone":       [("radius", "Enter radius: "), ("height", "Enter height: ")],
+    "sphere":     [("radius", "Enter radius: ")],
+    "hemisphere": [("radius", "Enter radius: ")],
+    "pyramid":    [("base_area", "Enter base area: "), ("height", "Enter height: ")],
+}

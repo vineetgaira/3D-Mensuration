@@ -1,3 +1,5 @@
+from src.constants import SHAPE_INPUTS
+
 SHAPES={
     1: "cube",
     2: "cuboid",
@@ -65,3 +67,9 @@ def get_dimensions(prompt):
                 print("Please enter a positive value.")
         except ValueError:
             print("Please enter a numeric value.")
+
+def collect_inputs(shape):
+    values = {}
+    for var_name, prompt in SHAPE_INPUTS[shape]:
+        values[var_name] = get_dimensions(prompt)
+    return values

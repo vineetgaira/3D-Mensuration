@@ -1,3 +1,22 @@
+SHAPES={
+    1: "cube",
+    2: "cuboid",
+    3: "cylinder",
+    4: "cone",
+    5: "sphere",
+    6: "hemisphere",
+    7: "pyramid"
+}
+
+PROPERTY={
+    1: "area",
+    2: "volume"
+}
+
+AREA={
+    1: "TSA",
+    2: "CSA"
+}
 
 SHAPE_INPUTS = {
     "cube":       [("side", "Enter side length: ")],

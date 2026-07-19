@@ -141,7 +141,7 @@ PYRAMID
 
 """
 
-shape_dict={
+SHAPE_DICT={
   "cube" : cube,
   "cuboid" : cuboid,
   "cylinder" : cylinder,

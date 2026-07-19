@@ -1,7 +1,7 @@
 import colorama 
 from colorama import Fore
 colorama.init(autoreset=True)
-from src.ascii_art import welcome_menu, selection_menu, properties_menu, area_type
+from src.ascii_art import welcome_menu, selection_menu, properties_menu, area_type, SHAPE_DICT
 
 def welcome():
     print(Fore.LIGHTBLUE_EX+welcome_menu)
@@ -9,6 +9,9 @@ def welcome():
 def select_shape():
       
   print(Fore.LIGHTBLUE_EX+selection_menu)
+
+def show_shape(shape):
+   SHAPE_DICT[shape]
 
 def select_properties():
    

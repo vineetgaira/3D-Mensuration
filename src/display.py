@@ -12,7 +12,7 @@ def select_shape():
 
 def show_shape(shape):
 
-   print(Fore.LIGHTRED_EX+SHAPE_DICT[shape])
+   print(Fore.LIGHTCYAN_EX+SHAPE_DICT[shape])
 
 def select_properties():
    

@@ -56,8 +56,8 @@ AREA_FORMULAS = {
         "TSA": lambda v: 2 * math.pi * v["radius"] * (v["radius"] + v["height"]),
     },
     "cone": {
-        "CSA": lambda v: math.pi * v["radius"] * v["slant_height"],
-        "TSA": lambda v: math.pi * v["radius"] * (v["radius"] + v["slant_height"]),
+        "CSA": lambda v: math.pi * v["radius"] * v["height"],
+        "TSA": lambda v: math.pi * v["radius"] * (v["radius"] + v["height"]),
     },
     "sphere": {
         "CSA": lambda v: 4 * math.pi * v["radius"] ** 2,

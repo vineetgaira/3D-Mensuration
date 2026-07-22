@@ -11,7 +11,7 @@ from src.constants import SHAPES, AREA, PROPERTY
 
 def start_programme():
     welcome()
-    time.sleep(5)
+    input()
     while True:
         clear_screen()
         select_shape()

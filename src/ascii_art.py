@@ -177,7 +177,8 @@ welcome_menu=r"""
   |  ░▓▓███▓▓░   |    |___________|          /▓▓▓▓▓▓\
    '.  ░░▓▓░░  .'     |___________|         /████████\
      '-.....-'                             /__________\
-
+     
+      >> Press ENTER to continue to selection menu
 """
 
 selection_menu=r""" 

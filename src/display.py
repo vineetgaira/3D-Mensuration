@@ -4,7 +4,7 @@ colorama.init(autoreset=True)
 from src.ascii_art import welcome_menu, selection_menu, properties_menu, area_type, SHAPE_DICT
 
 def welcome():
-    print(Fore.LIGHTBLUE_EX+welcome_menu)
+    print(Fore.LIGHTCYAN_EX+welcome_menu)
     
 def select_shape():
       
@@ -16,8 +16,8 @@ def show_shape(shape):
 
 def select_properties():
    
-   print(Fore.LIGHTYELLOW_EX+properties_menu)
+   print(Fore.LIGHTCYAN_EX+properties_menu)
 
 def select_area_type():
-   print(Fore.LIGHTGREEN_EX+area_type)
+   print(Fore.LIGHTCYAN_EX+area_type)
 

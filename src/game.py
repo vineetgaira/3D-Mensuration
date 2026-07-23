@@ -29,12 +29,12 @@ def start_programme():
             area_type=get_user_choie(AREA, "Enter your choice: ")
             area=calculate_area(shape,area_type,values)
             if area_type=="TSA":
-                print(Fore.LIGHTGREEN_EX+f"Total Surface Area: {area:.4f}")
+                print(Fore.LIGHTGREEN_EX+f"Total Surface Area: {area:.4f} unit² ")
             else:
-                print(Fore.LIGHTGREEN_EX+f"Curved/Lateral Surface Area: {area:.4f}")
+                print(Fore.LIGHTGREEN_EX+f"Curved/Lateral Surface Area: {area:.4f} unit² ")
         else:
             volume=calculate_volume(shape,values)
-            print(Fore.LIGHTGREEN_EX+f"Volume: {volume:.3f}")
+            print(Fore.LIGHTGREEN_EX+f"Volume: {volume:.4f} unit³ ")
         while True:
             user_exit=input(Fore.LIGHTCYAN_EX+"Do you want to continue? y/n :").lower().strip()
             if user_exit=="y":

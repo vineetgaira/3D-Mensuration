@@ -4,7 +4,7 @@ from colorama import Fore
 colorama.init(autoreset=True)
 from src.display import welcome, select_shape, select_properties, select_area_type,show_shape
 from src.user_input import get_user_choie, collect_inputs
-from src.utils import clear_screen
+from src.utils import clear_screen, show_error
 from src.calculation import calculate_volume,calculate_area
 from src.constants import SHAPES, AREA, PROPERTY
 
@@ -43,7 +43,7 @@ def start_programme():
                 print(Fore.GREEN+"Thanks for being here...")
                 return
             else:
-                print(Fore.RED+"Please etner a y/n.")
+                show_error("Please etner a y/n.")
             
         
 

@@ -3,6 +3,7 @@ from colorama import Fore
 colorama.init(autoreset=True)
 
 from src.constants import SHAPE_INPUTS
+from src.utils import show_error
 
 
 def get_user_choie(options: dict, prompt: str ):
@@ -13,9 +14,9 @@ def get_user_choie(options: dict, prompt: str ):
             if choice in valid_choices:
                 return options[choice]
             else:
-                print(Fore.RED+"Please enter a valid choice.")
+                show_error("Please enter a valid choice.")
         except ValueError:
-            print(Fore.RED+"Please enter a valid integer choice.")
+            show_error("Please enter a valid integer choice.")
 
 def get_valid_dimensions(prompt):
     while True:
@@ -24,9 +25,9 @@ def get_valid_dimensions(prompt):
             if value > 0:
                 return value
             else:
-                print(Fore.RED+"Please enter a positive value.")
+                show_error("Please enter a positive value.")
         except ValueError:
-            print(Fore.RED+"Please enter a numeric value.")
+            show_error("Please enter a numeric value.")
 
 def collect_inputs(shape):
     values = {}
